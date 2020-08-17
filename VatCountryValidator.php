@@ -145,11 +145,5 @@ class VatCountryValidator extends Validator
   		if($country_id == 385 && !preg_match('/(^HR)([0-9]{11}))/', $vat)) {
   			$this->addError($model, $attribute, $attributeMessage);
   		}
-
-  		//HR
-  		if($country_id == 385 && !preg_match('/(^HR)([0-9]{11}))/', $vat)) {
-  			$this->addError($model, $attribute, $attributeMessage);
-  		}
-
     }
 }
